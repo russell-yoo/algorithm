@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+env/
+venv/
+ENV/
+VENV/
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+.mypy_cache/
+.pytest_cache/
+.coverage
+.tox/
+.ipynb_checkpoints/
+*.sqlite3
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.javadoc
+target/
+bin/
+out/
+*.swp
+
+# Kotlin
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.kotlin_module
+*.swp
+build/
+out/
+
+# Scala
+*.class
+*.log
+target/
+lib_managed/
+src_managed/
+project/target/
+project/project/
+.cache/
+.history/
+dist/
+out/
+
+# VSCode
+.vscode/
+.history/
+
+# OS generated
+.DS_Store
+Thumbs.db
+.idea/
+*.sublime-workspace
+*.sublime-project
