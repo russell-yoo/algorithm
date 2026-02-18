@@ -3,8 +3,8 @@ import java.util.*;
 
 public class Main {
 
-    public static long getDistance(int x1, int y1) {
-        return (long) x1 * x1 + y1 * y1;
+    public static long getDistance(long x1, long y1) {
+        return x1 * x1 + y1 * y1;
     }
 
     public static void main(String[] args) throws IOException {
@@ -21,7 +21,7 @@ public class Main {
             for (int j = 0; j < points.length; j += 2) {
                 long x = Long.parseLong(points[j]);
                 long y = Long.parseLong(points[j + 1]);
-                long dist = getDistance((int) x, (int) y);
+                long dist = getDistance(x, y);
                 longgest = Math.max(longgest, dist);
             }
 
@@ -29,7 +29,7 @@ public class Main {
         }
 
         Collections.sort(s);
-        bw.write(String.valueOf(s.get(k - 1)));
+        bw.write(String.valueOf(s.get(k - 1)) + ".00");
         bw.flush();
     }
 }

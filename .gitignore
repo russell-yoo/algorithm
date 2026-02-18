@@ -66,6 +66,9 @@ out/
 .vscode/
 .history/
 
+# Zed
+.zed/java_out/
+
 # OS generated
 .DS_Store
 Thumbs.db
