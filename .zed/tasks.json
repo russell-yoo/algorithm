@@ -1,0 +1,8 @@
+[
+  {
+    "label": "java: run current dir (no class)",
+    "command": "mkdir -p \"$ZED_WORKTREE_ROOT/.zed/java_out\" && javac -d \"$ZED_WORKTREE_ROOT/.zed/java_out\" *.java && java -cp \"$ZED_WORKTREE_ROOT/.zed/java_out\" Main",
+    "cwd": "$ZED_DIRNAME",
+    "reveal": "always",
+  },
+]
