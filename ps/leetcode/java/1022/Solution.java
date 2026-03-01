@@ -19,5 +19,14 @@ class TreeNode {
 
 class Solution {
 
-    public int sumRootToLeaf(TreeNode root) {}
+    public int sumRootToLeaf(TreeNode root) {
+        return dfs(root, 0);
+    }
+
+    private int dfs(TreeNode node, int pathSum) {
+        if (node == null) return 0;
+        pathSum = (pathSum << 1) | node.val;
+        if (node.left == null && node.right == null) return pathSum;
+        return dfs(node.left, pathSum) + dfs(node.right, pathSum);
+    }
 }
