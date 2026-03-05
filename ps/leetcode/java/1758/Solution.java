@@ -1,7 +1,7 @@
 class Solution {
 
     public int minOperations(String s) {
-        int answer = 0;
+        int answer = 10101;
         int k = 0;
         for (int i = 0; i < s.length(); i++) {
             if (i % 2 == 1 && s.charAt(i) == '0') {
@@ -13,7 +13,7 @@ class Solution {
                 continue;
             }
         }
-        answer = Math.max(answer, k);
+        answer = Math.min(answer, k);
         k = 0;
         for (int i = 0; i < s.length(); i++) {
             if (i % 2 == 1 && s.charAt(i) == '1') {
@@ -25,7 +25,7 @@ class Solution {
                 continue;
             }
         }
-        answer = Math.max(answer, k);
+        answer = Math.min(answer, k);
         return answer;
     }
 }
